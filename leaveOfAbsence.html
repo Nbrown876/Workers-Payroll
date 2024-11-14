@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave of Absence Records</title>
+    <link rel="stylesheet" href="leaveOfAbsence.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <h2>LEAVE OF ABSENCE RECORDS -GRANT PAID/UNPAID LEAVE REQUEST</h2>
+        <div class="menu-bar">
+            <span>FILE</span>
+            <span>TOOLS</span>
+            <span>HELP</span>
+        </div>
+    </div>
+
+    <div class="toolbar">
+        <button class="tool-btn home-btn">
+            <i class="fas fa-home"></i> HOME
+        </button>
+        <button class="tool-btn">
+            <i class="fas fa-file"></i> NEW
+        </button>
+        <button class="tool-btn">
+            <i class="fas fa-save"></i> SAVE
+        </button>
+        <button class="tool-btn">
+            <i class="fas fa-trash"></i> DELETE
+        </button>
+        <button class="tool-btn">
+            <i class="fas fa-print"></i> PRINT
+        </button>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-item">LEAVE OF ABSENCE RECORDS</div>
+        <div class="sidebar-item">VIEW PREVIOUS LEAVE REQUESTS</div>
+        <div class="sidebar-item">VIEW CURRENT LEAVE REQUESTS</div>
+        <div class="sidebar-item">GRANT PAID/UNPAID LEAVE REQUEST</div>
+        <div class="sidebar-item">MAIN MENU</div>
+    </div>
+
+    <div class="main-content">
+        <div class="form-container">
+            <div class="left-section">
+                <div class="profile-image"></div>
+                <div class="form-group">
+                    <label>EMPLOYEE ID:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>FIRST NAME:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>LAST NAME:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>MIDDLE NAME:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>DEPARTMENT:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>START DATE OF REQUESTED LEAVE:</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>END DATE OF REQUESTED LEAVE:</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>REQUESTED BY:</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="form-group">
+                    <label>GENDER:</label>
+                    <div class="radio-group">
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">MALE</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">FEMALE</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>DOB:</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>CONTACT:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>ADDRESS:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>POSITION:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>AMOUNT REQUESTED:</label>
+                    <input type="number">
+                </div>
+                <div class="form-group">
+                    <label>APPROVED BY:</label>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn btn-save">SAVE & CLOSE</button>
+            <button class="btn btn-grant">GRANT PAID LEAVE</button>
+            <button class="btn btn-grant">GRANT UNPAID LEAVE</button>
+        </div>
+    </div>
+
+    <script src="leaveOfAbsence.js"></script>
+</body>
+</html>

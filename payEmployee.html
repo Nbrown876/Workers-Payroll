@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAY EMPLOYEE</title>
+    <link rel="stylesheet" href="payEmployee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title">PAY EMPLOYEE</div>
+            <div class="window-controls">
+
+            </div>
+        </div>
+
+        <div class="menu-bar">
+            <div class="menu-item">FILE</div>
+            <div class="menu-item">TOOLS</div>
+            <div class="menu-item">HELP</div>
+        </div>
+
+        <div class="toolbar">
+            <button onclick="window.location.href='dashboard.html'" class="tool-btn">
+                <i class="fas fa-home"></i>
+                <span>HOME</span>
+            </button>
+            <button class="tool-btn">
+                <i class="fas fa-file"></i>
+                <span>NEW</span>
+            </button>
+            <button class="tool-btn">
+                <i class="fas fa-save"></i>
+                <span>SAVE</span>
+            </button>
+            <button class="tool-btn">
+                <i class="fas fa-trash"></i>
+                <span>DELETE</span>
+            </button>
+            <button class="tool-btn">
+                <i class="fas fa-print"></i>
+                <span>PRINT</span>
+            </button>
+        </div>
+
+        <div class="main-content">
+            <div class="payment-form">
+                <h3>PAYMENT DETAILS:</h3>
+                
+                <div class="form-group">
+                    <label>BANK BRANCH:</label>
+                    <input type="text" class="full-width">
+                </div>
+
+                <div class="form-group">
+                    <label>ACCOUNT NUMBER:</label>
+                    <input type="text" class="full-width">
+                </div>
+
+                <div class="form-group">
+                    <label>ACCOUNT HOLDER:</label>
+                    <input type="text" class="full-width">
+                </div>
+
+                <div class="work-section">
+                    <div class="work-header">
+                        <div class="scope">SCOPE OF WORK:</div>
+                        <div class="amount">AMOUNT (JMD):</div>
+                    </div>
+                    <div class="work-input">
+                        <textarea class="scope-input"></textarea>
+                        <input type="number" class="amount-input">
+                    </div>
+                </div>
+
+                <div class="work-section">
+                    <div class="work-header">
+                        <div class="scope">DESCRIPTION OF PAYMENT:</div>
+                        <div class="amount">AMOUNT (JMD):</div>
+                    </div>
+                    <div class="work-input">
+                        <textarea class="scope-input"></textarea>
+                        <input type="number" class="amount-input">
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="action-btn clear">CLEAR</button>
+                    <button class="action-btn edit">EDIT</button>
+                    <button class="action-btn save">SAVE</button>
+                    <button class="action-btn submit">SUBMIT PAYMENT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="payEmployee.js"></script>
+</body>
+</html>
