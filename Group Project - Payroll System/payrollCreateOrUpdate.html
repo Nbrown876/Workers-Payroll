@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE, UPDATE PAYROLL</title>
+    <link rel="stylesheet" href="payroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CREATE/UPDATE PAYROLL</div>
+        <div class="menu">
+            <span>FILE</span>
+            <span>TOOLS</span>
+            <span>HELP</span>
+        </div>
+    </nav>
+
+    <div class="toolbar">
+        <button onclick="window.location.href='dashboard.html'" class="tool-btn">
+            <i class="fas fa-home"></i>
+            <span>HOME</span>
+        </button>
+        <button class="tool-btn" onclick="newPayroll()">
+            <i class="fas fa-file"></i>
+            <span>NEW</span>
+        </button>
+        <button class="tool-btn" onclick="savePayroll()">
+            <i class="fas fa-save"></i>
+            <span>SAVE</span>
+        </button>
+        <button class="tool-btn" onclick="deletePayroll()">
+            <i class="fas fa-trash"></i>
+            <span>DELETE</span>
+        </button>
+        <button class="tool-btn" onclick="printPayroll()">
+            <i class="fas fa-print"></i>
+            <span>PRINT</span>
+        </button>
+    </div>
+
+    <div class="payroll-form">
+        <div class="form-header">
+            <div class="form-group">
+                <label>PAY TO THE ORDER OF</label>
+                <select id="employeeSelect">
+                    <option value="">Select Employee</option>
+                </select>
+            </div>
+            <div class="form-group-right">
+                <div class="number-group">
+                    <label>NO.</label>
+                    <input type="text" id="payrollNo" readonly>
+                </div>
+                <div class="date-group">
+                    <label>DATE</label>
+                    <input type="date" id="payrollDate">
+                </div>
+                <div class="amount-group">
+                    <label>$</label>
+                    <input type="number" id="amount" readonly>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>BANK ACCOUNT</label>
+            <select id="bankAccount">
+                <option value="">National Commercial Bank (NCB)</option>
+                <option value="">First Global Bank (FGB)</option>
+                <option value="">ScotiaBank</option>
+                <option value="">Jamaica National Bank (JN)</option>
+            </select>
+        </div>
+
+        <div class="payroll-summary">
+            <h3>PAYROLL SUMMARY</h3>
+            <table id="payrollTable">
+                <thead>
+                    <tr>
+                        <th>EMPLOYEE NAME</th>
+                        <th>PAY</th>
+                        <th>TOTAL WORKED HOURS</th>
+                        <th>OVERTIME</th>
+                        <th>TOTAL OVERTIME HOURS</th>
+                        <th>GROSS PAY</th>
+                        <th>INCOME TAX</th>
+                    </tr>
+                </thead>
+                <tbody id="payrollBody">
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="action-buttons">
+            <button class="action-btn create" onclick="createPayroll()">CREATE</button>
+            <button class="action-btn update" onclick="updatePayroll()">UPDATE</button>
+            <button class="action-btn clear" onclick="clearForm()">CLEAR</button>
+        </div>
+    </div>
+
+    <script src="payroll.js"></script>
+</body>
+</html>
